@@ -14,5 +14,5 @@ for item in data:
    result={
      'title':item.get_text(),
      'link':item.get('href'),       
-     'id': re.findall('\d+',item.get('href'))
+     'id': re.findall('\d+',str( item.get('href') ))
 }
